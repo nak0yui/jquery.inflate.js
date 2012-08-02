@@ -5,14 +5,14 @@ jQuery.extend => jQuery.inflate
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/nak0yui/inflate/master/dist/inflate.min.js
-[max]: https://raw.github.com/nak0yui/inflate/master/dist/inflate.js
+[min]: https://raw.github.com/nak0yui/jquery.inflate.js/master/dist/jquery.inflate.min.js
+[max]: https://raw.github.com/nak0yui/jquery.inflate.js/master/dist/jquery.inflate.js
 
 In your web page:
 
 ```html
 <script src="jquery.js"></script>
-<script src="dist/inflate.min.js"></script>
+<script src="dist/jquery.inflate.min.js"></script>
 <script>
 jQuery(function($) {
   var
