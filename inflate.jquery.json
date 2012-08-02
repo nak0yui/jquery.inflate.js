@@ -1,0 +1,33 @@
+{
+  "srcname": "inflate",
+  "name": "jquery.inflate",
+  "title": "jQuery plugin jquery.inflate.js",
+  "description": "jQuery.extend => jQuery.inflate",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nak0yui/jquery.inflate.js",
+  "author": {
+    "name": "nak0yui",
+    "email": "nak0yui@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nak0yui/jquery.inflate.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nak0yui/jquery.inflate.js/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nak0yui/jquery.inflate.js/blob/master/LICENSE-MIT"
+    },
+    {
+      "type": "GPL",
+      "url": "https://github.com/nak0yui/jquery.inflate.js/blob/master/LICENSE-GPL"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">= 1.6"
+  },
+  "keywords": []
+}
