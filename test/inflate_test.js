@@ -24,7 +24,7 @@
 
   module('jQuery.inflate');
 
-  test('is inflate', 4, function() {
+  test('is inflate', 7, function() {
     var 
     function1 = function() {
       var moge = 'function1';
@@ -77,7 +77,28 @@
         bar: false
       }
     },
-    arr = [1, 2, 3];
+    arr = [1, 2, 3],
+    target = {
+      init: 'first'
+    },
+    src1 = {
+      foo: 'bar'
+    },
+    src2 = {
+      moge: 'hoge'
+    },
+    src1Copy = {
+      foo: 'bar'
+    },
+    src2Copy = {
+      moge: 'hoge'
+    },
+    mergedThree = {
+      init: 'first',
+      foo: 'bar',
+      moge: 'hoge'
+    };
+    
     
     deepEqual($.inflate({}, {}), {}, 'should be return empty object');
     $.inflate(arr, options);
@@ -85,6 +106,11 @@
     $.inflate(settings, options);
     deepEqual(settings, merged, 'should be extend');
     deepEqual(options, optionsCopy, 'options must not be modified');
+    
+    $.inflate(target, src1, src2);
+    deepEqual(target, mergedThree, 'should be extend');
+    deepEqual(src1, src1Copy, 'src1 must not be modified');
+    deepEqual(src1, src1Copy, 'src1 must not be modified');
   });
 
 }(jQuery));
